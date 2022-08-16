@@ -1,0 +1,33 @@
+{
+    "name": "@hedger/vue-mapbox",
+    "private": true,
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/vue-mapbox.umd.js",
+    "module": "./dist/vue-mapbox.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/vue-mapbox.es.js",
+            "require": "./dist/vue-mapbox.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.2.37"
+    },
+    "devDependencies": {
+        "@types/mapbox-gl": "^1.13.4",
+        "@types/node": "^18.7.3",
+        "@vitejs/plugin-vue": "^3.0.3",
+        "mapbox-gl": "^2.9.2",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.7",
+        "vue-tsc": "^0.39.5"
+    }
+}
